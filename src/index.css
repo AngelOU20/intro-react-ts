@@ -39,6 +39,20 @@ button:hover {
   border-color: #646cff;
 }
 
+.container-hook {
+  margin-top: 20px;
+  padding: 20px;
+  border: 2px solid #f9f9f9;
+  border-radius: 20px;
+}
+
+.title-hook {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 800;
+  margin: 0;
+}
+
 .flex {
   display: flex;
   justify-content: center;
