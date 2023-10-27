@@ -5,19 +5,28 @@ import {
   TimerFather,
   Form,
   Form2,
-} from './components';
+} from './app/components';
+import { Todo } from './todo';
 
 function App(): JSX.Element {
   return (
     <>
       <h1>React + Hooks + TypeScript</h1>
       <hr />
+      {/* useContext */}
+      <div className="container-hook">
+        <h2 className="title-hook" style={{ color: '#ffc72d' }}>
+          useContext
+        </h2>
+        <Todo />
+      </div>
+
       {/* Custom Hooks */}
       <div className="container-hook">
         <h2 className="title-hook" style={{ color: '#ea728b' }}>
           Custom Hooks
         </h2>
-        <div className="flex flex-space-around flex-start">
+        <div className="flex flex-space-around align-start">
           <Form />
           <Form2 />
         </div>
@@ -33,7 +42,7 @@ function App(): JSX.Element {
 
       {/* useEffect - useRef */}
       <div className="container-hook">
-        <h2 className="title-hook" style={{ color: '#77ffff' }}>
+        <h2 className="title-hook" style={{ color: '#06dfc0' }}>
           useEffect - useRef
         </h2>
         <TimerFather />
