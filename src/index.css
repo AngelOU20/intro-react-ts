@@ -41,7 +41,7 @@ button:hover {
 
 .container-hook {
   margin: 45px 0px;
-  padding: 20px;
+  padding: 25px;
   border: 2px solid #f9f9f9;
   border-radius: 20px;
 }
@@ -53,6 +53,8 @@ button:hover {
   margin: 0;
 }
 
+/* Flex */
+
 .flex {
   display: flex;
   justify-content: center;
@@ -61,38 +63,29 @@ button:hover {
 
 .flex-column {
   flex-direction: column;
-  align-items: flex-start;
 }
 
 .flex-space-around {
   justify-content: space-around;
 }
 
-.flex-start {
+.align-start {
   align-items: flex-start;
 }
 
-.flex-column h2 {
+.align-center {
+  align-items: center;
+}
+
+.h2-purple {
   color: #646cff;
+  font-size: 1.47em;
 }
 
 .flex-column span {
   font-size: 20px;
   font-weight: 700;
   color: #f9f9f9;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
 
 /* Form */
@@ -160,4 +153,17 @@ button:hover {
 /* Estilo del borde del input cuando el label está en la posición superior */
 .custom-input:not(:placeholder-shown) {
   border-color: #ea728b;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
 }
