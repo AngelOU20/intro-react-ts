@@ -24,7 +24,7 @@ export const Counter: React.FC = () => {
         <div className="flex">
           <button onClick={handleIncrement}>+1</button>
           <button onClick={handleDecrement}>-1</button>
-          <button onClick={() => handleIncrementBy(5)}>5</button>
+          <button onClick={() => handleIncrementBy(5)}>+5</button>
           <button onClick={() => setCounter(0)}>Reset</button>
         </div>
       </div>
