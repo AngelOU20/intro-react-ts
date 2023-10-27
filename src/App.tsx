@@ -1,18 +1,16 @@
-import { Counter, User } from './components';
-import { TimerFather } from './components/TimerFather';
+import { Counter, CounterRed, User, TimerFather } from './components';
 
 function App(): JSX.Element {
   return (
     <>
       <h1>React + Hooks + TypeScript</h1>
       <hr />
-      {/* UseState */}
+      {/* useReduce */}
       <div className="container-hook">
-        <h2 className="title-hook" style={{ color: '#646cff' }}>
-          useState
+        <h2 className="title-hook" style={{ color: '#87f962' }}>
+          useReducer
         </h2>
-        <Counter />
-        <User />
+        <CounterRed />
       </div>
 
       {/* useEffect - useRef */}
@@ -21,6 +19,15 @@ function App(): JSX.Element {
           useEffect - useRef
         </h2>
         <TimerFather />
+      </div>
+
+      {/* UseState */}
+      <div className="container-hook">
+        <h2 className="title-hook" style={{ color: '#646cff' }}>
+          useState
+        </h2>
+        <Counter />
+        <User />
       </div>
     </>
   );
