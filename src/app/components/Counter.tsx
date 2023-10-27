@@ -19,7 +19,7 @@ export const Counter: React.FC = () => {
   return (
     <>
       <div className="flex flex-column">
-        <h2>Counter: useState</h2>
+        <h2 className="h2-purple">Counter: useState</h2>
         <span>Valor: {counter}</span>
         <div className="flex">
           <button onClick={handleIncrement}>+1</button>

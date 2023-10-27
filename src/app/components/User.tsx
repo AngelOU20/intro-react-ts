@@ -26,7 +26,7 @@ export const User: React.FC = () => {
 
   return (
     <div className="flex flex-column">
-      <h2>User: useState</h2>
+      <h2 className="h2-purple">User: useState</h2>
 
       <div className="flex">
         <button onClick={login}>Login</button>
