@@ -40,7 +40,7 @@ button:hover {
 }
 
 .container-hook {
-  margin-top: 20px;
+  margin: 45px 0px;
   padding: 20px;
   border: 2px solid #f9f9f9;
   border-radius: 20px;
@@ -61,6 +61,14 @@ button:hover {
 
 .flex-column {
   flex-direction: column;
+  align-items: flex-start;
+}
+
+.flex-space-around {
+  justify-content: space-around;
+}
+
+.flex-start {
   align-items: flex-start;
 }
 
@@ -85,4 +93,71 @@ button:hover {
   button {
     background-color: #f9f9f9;
   }
+}
+
+/* Form */
+
+.input-outer-wrap {
+  position: relative;
+  margin: 25px 0;
+}
+
+.input-outer-wrap input {
+  height: 45px;
+  width: 240px;
+  background: transparent;
+  position: relative;
+  z-index: 1;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  font-size: 16px;
+  padding: 0 10px;
+}
+
+.input-outer-wrap label {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  z-index: 0;
+}
+
+.input-outer-wrap input:focus {
+  border-color: #ea728b;
+  outline: none;
+}
+
+/* Estilo del input cuando está enfocado */
+.custom-input:focus + .custom-label {
+  font-size: 0.875rem;
+  background: #242424;
+  color: #ea728b;
+  padding: 0 0.4rem;
+  left: 5px;
+  top: -8px;
+  z-index: 2;
+  position: absolute;
+  height: 15px;
+}
+
+/* Estilo del label cuando el input tiene un valor */
+.custom-input:not(:placeholder-shown) + .custom-label {
+  font-size: 0.875rem;
+  background: #242424;
+  color: #ea728b;
+  padding: 0 0.4rem;
+  left: 5px;
+  top: -8px;
+  z-index: 2;
+  position: absolute;
+  height: 15px;
+}
+
+/* Estilo del borde del input cuando el label está en la posición superior */
+.custom-input:not(:placeholder-shown) {
+  border-color: #ea728b;
 }
