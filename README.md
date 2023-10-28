@@ -1,6 +1,8 @@
-# React with TypeScript - Starter Projects
+# 🚀 React with TypeScript - Starter Projects
 
-![React Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png)
+<div align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png" width="200">
+</div>
 
 Welcome to the "React with TypeScript - Starter Projects" repository. Here you'll find a collection of introductory React projects developed with TypeScript. These projects are designed to help you get started with React and TypeScript.
 
