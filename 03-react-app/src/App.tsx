@@ -1,10 +1,10 @@
 import { BrowserRouter } from 'react-router-dom';
-import { Navigation } from './router/Navigation';
+import { AppRouter } from './router/AppRouter';
 
 function App(): JSX.Element {
   return (
     <BrowserRouter>
-      <Navigation />
+      <AppRouter />
     </BrowserRouter>
   );
 }
