@@ -1,6 +1,6 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
-import { LazyPage1, LazyPage2, LazyPage3 } from '../01-lazyload/pages';
 import { Navigation } from './Navigation';
+import { routes } from './routes';
 
 export const AppRouter = () => {
   return (
@@ -8,10 +8,10 @@ export const AppRouter = () => {
       <Navigation />
 
       <Routes>
-        <Route path="lazy1" element={<LazyPage1 />} />
-        <Route path="lazy2" element={<LazyPage2 />} />
-        <Route path="lazy3" element={<LazyPage3 />} />
-        <Route path="*" element={<Navigate to="/home" replace />} />
+        {routes.map(({ path, Component }) => (
+          <Route key={path} path={path} element={<Component />} />
+        ))}
+        <Route path="*" element={<Navigate to={routes[0].to} replace />} />
       </Routes>
     </div>
   );
