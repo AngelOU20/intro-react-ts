@@ -1,5 +1,5 @@
 import './style.css';
-import './code-smells/02-low-coupling';
+import './solid-principles/02-open-close-a';
 
 const app = document.querySelector<HTMLDivElement>('#app')!;
 
