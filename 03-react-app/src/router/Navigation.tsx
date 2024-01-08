@@ -1,5 +1,5 @@
+import logo from '../02-component-patterns/assets/react.svg';
 import { NavLink } from 'react-router-dom';
-import logo from '../assets/react.svg';
 import { routes } from './routes';
 
 export const Navigation = () => {
